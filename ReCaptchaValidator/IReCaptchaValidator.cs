@@ -9,6 +9,12 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
     public interface IReCaptchaValidator
     {
         /// <summary>
+        /// Gets the reCAPTCHA's public site key.
+        /// </summary>
+        /// <returns>The public site key.</returns>
+        string GetSiteKey();
+
+        /// <summary>
         /// Submits the reCAPTCHA code that you got back from a reCAPTCHA-enabled form
         /// to the Google servers and returns the response (deserialized JSON).
         /// </summary>
