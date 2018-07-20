@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackageId>GlitchedPolygons.Services.ReCaptchaValidator</PackageId>
+    <Product>GlitchedPolygons.Services.ReCaptchaValidator</Product>
+    <Authors>Glitched Polygons</Authors>
+    <Company>Glitched Polygons</Company>
+    <Description>Google ReCaptcha wrapper class (injectable service for ASP.NET Core apps).</Description>
+    <Copyright />
+    <PackageIconUrl>https://www.pinnacleinternet.com/wp-content/uploads/reCaptcha-transparent.png</PackageIconUrl>
+    <PackageTags>google recaptcha validation human verification anti bot security safety auth authenticity authenticate authenticator proof</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
