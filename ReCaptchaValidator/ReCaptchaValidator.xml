@@ -55,5 +55,29 @@
             Validate reCAPTCHA codes from forms with this nifty utility class.
             </summary>
         </member>
+        <member name="M:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaValidator.GetSiteKey">
+            <summary>
+            Gets the reCAPTCHA's public site key.
+            </summary>
+            <returns>The public site key.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaValidator.#ctor(System.String,System.String,System.Double)">
+            <summary>
+            Creates a reCAPTCHA validator service instance using the provided API keys
+            and the specified timeout (in seconds).
+            </summary>
+            <param name="reCaptchaSiteKey">The public key.</param>
+            <param name="reCaptchaSecretKey">The private key.</param>
+            <param name="timeout">The timeout delay in seconds.</param>
+        </member>
+        <member name="M:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaValidator.Validate(System.String,System.Net.IPAddress)">
+            <summary>
+            Submits the reCAPTCHA code that you got back from a reCAPTCHA-enabled form
+            to the Google servers and returns the response (deserialized JSON).
+            </summary>
+            <param name="code">The generated reCAPTCHA validation code from the form.</param>
+            <param name="ip">The request's IP Address.</param>
+            <returns>Deserialized JSON of Google's response to the submitted reCAPTCHA code.</returns>
+        </member>
     </members>
 </doc>
