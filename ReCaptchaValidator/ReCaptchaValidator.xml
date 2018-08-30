@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReCaptchaValidator</name>
+    </assembly>
+    <members>
+        <member name="T:GlitchedPolygons.Services.ReCaptchaValidator.IReCaptchaValidator">
+            <summary>
+            Interface for validating whether a user is human or not.
+            </summary>
+        </member>
+        <member name="M:GlitchedPolygons.Services.ReCaptchaValidator.IReCaptchaValidator.GetSiteKey">
+            <summary>
+            Gets the reCAPTCHA's public site key.
+            </summary>
+            <returns>The public site key.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.Services.ReCaptchaValidator.IReCaptchaValidator.Validate(System.String,System.Net.IPAddress)">
+            <summary>
+            Submits the reCAPTCHA code that you got back from a reCAPTCHA-enabled form
+            to the Google servers and returns the response (deserialized JSON).
+            </summary>
+            <param name="code">The generated reCAPTCHA validation code from the form.</param>
+            <param name="ip">The request's IP Address.</param>
+            <returns>Deserialized JSON of Google's response to the submitted reCAPTCHA code.</returns>
+        </member>
+        <member name="T:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaResponse">
+            <summary>
+            Google ReCaptchaCode Response JSON
+            </summary>
+        </member>
+        <member name="P:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaResponse.Success">
+            <summary>
+            Bot or not?
+            </summary>
+        </member>
+        <member name="P:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaResponse.TimeStamp">
+            <summary>
+            Timestamp of the challenge load (ISO format yyyy-MM-dd'T'HH:mm:ssZZ)
+            </summary>
+        </member>
+        <member name="P:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaResponse.HostName">
+            <summary>
+            The hostname of the site where the reCAPTCHA was solved
+            </summary>
+        </member>
+        <member name="P:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaResponse.ErrorCodes">
+            <summary>
+            Any eventual error codes.
+            </summary>
+        </member>
+        <member name="T:GlitchedPolygons.Services.ReCaptchaValidator.ReCaptchaValidator">
+            <inheritdoc />
+            <summary>
+            Validate reCAPTCHA codes from forms with this nifty utility class.
+            </summary>
+        </member>
+    </members>
+</doc>
