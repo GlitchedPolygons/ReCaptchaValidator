@@ -22,8 +22,19 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
         private readonly string reCaptchaSiteKey;
         private readonly string reCaptchaSecretKey;
 
+        /// <summary>
+        /// Gets the reCAPTCHA's public site key.
+        /// </summary>
+        /// <returns>The public site key.</returns>
         public string GetSiteKey() => reCaptchaSiteKey;
 
+        /// <summary>
+        /// Creates a reCAPTCHA validator service instance using the provided API keys
+        /// and the specified timeout (in seconds).
+        /// </summary>
+        /// <param name="reCaptchaSiteKey">The public key.</param>
+        /// <param name="reCaptchaSecretKey">The private key.</param>
+        /// <param name="timeout">The timeout delay in seconds.</param>
         public ReCaptchaValidator(string reCaptchaSiteKey, string reCaptchaSecretKey, double timeout = 20.0d)
         {
             if (string.IsNullOrEmpty(reCaptchaSiteKey) || string.IsNullOrEmpty(reCaptchaSecretKey))
@@ -37,6 +48,13 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
             this.reCaptchaSecretKey = reCaptchaSecretKey;
         }
 
+        /// <summary>
+        /// Submits the reCAPTCHA code that you got back from a reCAPTCHA-enabled form
+        /// to the Google servers and returns the response (deserialized JSON).
+        /// </summary>
+        /// <param name="code">The generated reCAPTCHA validation code from the form.</param>
+        /// <param name="ip">The request's IP Address.</param>
+        /// <returns>Deserialized JSON of Google's response to the submitted reCAPTCHA code.</returns>
         public async Task<ReCaptchaResponse> Validate(string code, IPAddress ip)
         {
             if (string.IsNullOrEmpty(code))

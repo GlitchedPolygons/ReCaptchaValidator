@@ -11,8 +11,9 @@
     <PackageIconUrl>https://www.pinnacleinternet.com/wp-content/uploads/reCaptcha-transparent.png</PackageIconUrl>
     <PackageTags>google recaptcha validation human verification anti bot security safety auth authenticity authenticate authenticator proof</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>Added xml documentation output in project settings (for IntelliSense).</PackageReleaseNotes>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>Added constructor docs.</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
