@@ -46,7 +46,7 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
 
             if (ip is null)
             {
-                throw new ArgumentException($"{nameof(ReCaptchaValidator)}::{nameof(Validate)}: The passed {nameof(ip)} address parameter is null! Please only pass valid IP addresses to this method... (use \"Request.HttpContext.Connection.RemoteIpAddress\")");
+                throw new ArgumentNullException($"{nameof(ReCaptchaValidator)}::{nameof(Validate)}: The passed {nameof(ip)} address parameter is null! Please only pass valid IP addresses to this method... (use \"Request.HttpContext.Connection.RemoteIpAddress\")");
             }
 
             IPAddress remoteIP = ip.MapToIPv4();
