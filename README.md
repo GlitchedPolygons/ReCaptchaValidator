@@ -1,4 +1,4 @@
-[![CircleCI Status Badge](https://circleci.com/gh/GlitchedPolygons/recaptcha_validator_service/tree/master.svg?style=shield&circle-token=79d770cbd61378e21214a776509da51be1f28903)](https://circleci.com/gh/GlitchedPolygons/recaptcha_validator_service/tree/master)
+[![CircleCI Status Badge](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator)
 
 # ReCaptcha Validator Service
 
