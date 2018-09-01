@@ -24,5 +24,3 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
         Task<ReCaptchaResponse> Validate(string code, IPAddress ip);
     }
 }
-
-// Copyright (C) - Raphael Beck, 2018

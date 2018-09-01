@@ -1,23 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>GlitchedPolygons.Services.ReCaptchaValidator</PackageId>
     <Product>GlitchedPolygons.Services.ReCaptchaValidator</Product>
+    <PackageIconUrl>https://www.pinnacleinternet.com/wp-content/uploads/reCaptcha-transparent.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</RepositoryUrl>
+    <Description>Google ReCaptcha wrapper class for quick and easy validation (injectable service for ASP.NET Core apps).</Description>
+    <PackageTags>google recaptcha validation human verification anti bot security safety auth authenticity authenticate authenticator proof</PackageTags>
     <Authors>Glitched Polygons</Authors>
     <Company>Glitched Polygons</Company>
-    <Description>Google ReCaptcha wrapper class (injectable service for ASP.NET Core apps).</Description>
-    <Copyright />
-    <PackageIconUrl>https://www.pinnacleinternet.com/wp-content/uploads/reCaptcha-transparent.png</PackageIconUrl>
-    <PackageTags>google recaptcha validation human verification anti bot security safety auth authenticity authenticate authenticator proof</PackageTags>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
-    <PackageReleaseNotes>Added constructor docs.</PackageReleaseNotes>
-    <RepositoryUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</RepositoryUrl>
+    <Version>1.0.4</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\ReCaptchaValidator.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp2.1\ReCaptchaValidator.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\ReCaptchaValidator.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

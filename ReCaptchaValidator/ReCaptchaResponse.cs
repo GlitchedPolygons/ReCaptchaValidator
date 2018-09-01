@@ -33,5 +33,3 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
         public string[] ErrorCodes { get; set; }
     }
 }
-
-// Copyright (C) - Raphael Beck, 2018

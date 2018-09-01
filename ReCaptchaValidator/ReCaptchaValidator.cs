@@ -41,8 +41,12 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
             {
                 throw new ArgumentException($"{nameof(ReCaptchaValidator)}::ctor: The passed {nameof(reCaptchaSiteKey)} or {nameof(reCaptchaSecretKey)} parameter is either null or empty!");
             }
-            
-            this.timeout = Math.Clamp(Math.Abs(timeout), 5.0d, 180.0d);
+
+            const double MIN = 5.0d;
+            const double MAX = 180.0d;
+            double t = Math.Abs(timeout);
+
+            this.timeout = (t < MIN) ? MIN : (t > MAX) ? MAX : t;
 
             this.reCaptchaSiteKey = reCaptchaSiteKey;
             this.reCaptchaSecretKey = reCaptchaSecretKey;
@@ -80,5 +84,3 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
         }
     }
 }
-
-// Copyright (C) - Raphael Beck, 2018
