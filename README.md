@@ -1,4 +1,4 @@
-[![CircleCI Status Badge](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator)
+[![CircleCI Status Badge](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator) [![Build Status](https://travis-ci.org/GlitchedPolygons/ReCaptchaValidator.svg?branch=master)](https://travis-ci.org/GlitchedPolygons/ReCaptchaValidator)
 
 # ReCaptcha Validator Service
 
