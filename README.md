@@ -1,4 +1,4 @@
-[![CircleCI Status Badge](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator) [![Build Status](https://travis-ci.org/GlitchedPolygons/ReCaptchaValidator.svg?branch=master)](https://travis-ci.org/GlitchedPolygons/ReCaptchaValidator)
+[![NuGet](https://img.shields.io/nuget/v/GlitchedPolygons.Services.ReCaptchaValidator.svg)](https://www.nuget.org/packages/GlitchedPolygons.Services.ReCaptchaValidator) [![CircleCI Status Badge](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator) [![Build Status](https://travis-ci.org/GlitchedPolygons/ReCaptchaValidator.svg?branch=master)](https://travis-ci.org/GlitchedPolygons/ReCaptchaValidator)
 
 # ReCaptcha Validator Service
 
