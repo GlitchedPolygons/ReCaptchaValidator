@@ -12,15 +12,17 @@
     <PackageTags>google recaptcha validation human verification anti bot security safety auth authenticity authenticate authenticator proof</PackageTags>
     <Authors>Glitched Polygons</Authors>
     <Company>Glitched Polygons</Company>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
+    <AssemblyName>GlitchedPolygons.Services.ReCaptchaValidator</AssemblyName>
+    <RootNamespace>GlitchedPolygons.Services.ReCaptchaValidator</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard2.0\ReCaptchaValidator.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\GlitchedPolygons.Services.ReCaptchaValidator.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard2.0\ReCaptchaValidator.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\GlitchedPolygons.Services.ReCaptchaValidator.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
