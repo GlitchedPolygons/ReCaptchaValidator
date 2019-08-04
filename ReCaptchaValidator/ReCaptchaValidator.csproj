@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>GlitchedPolygons.Services.ReCaptchaValidator</PackageId>
     <Product>GlitchedPolygons.Services.ReCaptchaValidator</Product>
-    <PackageIconUrl>https://www.pinnacleinternet.com/wp-content/uploads/reCaptcha-transparent.png</PackageIconUrl>
+    <PackageIconUrl>https://media.githubusercontent.com/media/GlitchedPolygons/NugetIcons/8fc395a8b2ae595a2816a690669490cf9a4764b9/recaptcha.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</RepositoryUrl>
     <Description>Google ReCaptcha wrapper class for quick and easy validation (injectable service for ASP.NET Core apps).</Description>
