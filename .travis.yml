@@ -2,13 +2,13 @@
 language: csharp
 sudo: false # faster builds
 solution: ./ReCaptchaValidator.sln
-dist: trusty
+dist: xenial
 notifications:
   email: false
 install:
   - dotnet restore ./ReCaptchaValidator.sln
 mono: none
-dotnet: 2.1.300
+dotnet: 2.2
 script:
   - dotnet restore ./ReCaptchaValidator.sln
   - cd ReCaptchaValidator.Tests/
