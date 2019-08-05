@@ -1,9 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-
     <IsPackable>false</IsPackable>
+    <RootNamespace>GlitchedPolygons.Services.ReCaptchaValidator.Tests</RootNamespace>
+    <AssemblyName>GlitchedPolygons.Services.ReCaptchaValidator.Tests</AssemblyName>
+    <PackageId>GlitchedPolygons.Services.ReCaptchaValidator.Tests</PackageId>
+    <Authors />
   </PropertyGroup>
 
   <ItemGroup>

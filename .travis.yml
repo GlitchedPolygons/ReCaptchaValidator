@@ -11,6 +11,6 @@ mono: none
 dotnet: 2.1.300
 script:
   - dotnet restore ./ReCaptchaValidator.sln
-  - cd UnitTests/
+  - cd ReCaptchaValidator.Tests/
   - dotnet test
   

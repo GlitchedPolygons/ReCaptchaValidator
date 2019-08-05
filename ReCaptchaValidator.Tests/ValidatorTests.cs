@@ -2,7 +2,7 @@ using Xunit;
 using System;
 using System.Net;
 
-namespace GlitchedPolygons.Services.ReCaptchaValidator.UnitTests
+namespace GlitchedPolygons.Services.ReCaptchaValidator.Tests
 {
     public class ValidatorTests
     {

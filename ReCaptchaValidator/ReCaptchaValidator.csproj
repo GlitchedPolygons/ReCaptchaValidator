@@ -3,8 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>GlitchedPolygons.Services.ReCaptchaValidator</Title>
     <PackageId>GlitchedPolygons.Services.ReCaptchaValidator</PackageId>
     <Product>GlitchedPolygons.Services.ReCaptchaValidator</Product>
+    <AssemblyName>GlitchedPolygons.Services.ReCaptchaValidator</AssemblyName>
+    <RootNamespace>GlitchedPolygons.Services.ReCaptchaValidator</RootNamespace>
     <PackageIconUrl>https://media.githubusercontent.com/media/GlitchedPolygons/NugetIcons/8fc395a8b2ae595a2816a690669490cf9a4764b9/recaptcha.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</RepositoryUrl>
@@ -12,9 +15,10 @@
     <PackageTags>google recaptcha validation human verification anti bot security safety auth authenticity authenticate authenticator proof</PackageTags>
     <Authors>Glitched Polygons</Authors>
     <Company>Glitched Polygons</Company>
-    <Version>1.0.5</Version>
-    <AssemblyName>GlitchedPolygons.Services.ReCaptchaValidator</AssemblyName>
-    <RootNamespace>GlitchedPolygons.Services.ReCaptchaValidator</RootNamespace>
+    <Version>1.0.6</Version>
+    <PackageVersion>1.0.6</PackageVersion>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
