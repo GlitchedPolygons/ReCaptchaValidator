@@ -24,7 +24,6 @@
     <Product>GlitchedPolygons.Services.ReCaptchaValidator</Product>
     <AssemblyName>GlitchedPolygons.Services.ReCaptchaValidator</AssemblyName>
     <RootNamespace>GlitchedPolygons.Services.ReCaptchaValidator</RootNamespace>
-    <PackageIconUrl>https://media.githubusercontent.com/media/GlitchedPolygons/NugetIcons/8fc395a8b2ae595a2816a690669490cf9a4764b9/recaptcha.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GlitchedPolygons/ReCaptchaValidator</RepositoryUrl>
     <Description>Google ReCaptcha wrapper class for quick and easy validation (injectable service for ASP.NET Core apps).</Description>
@@ -48,5 +47,14 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
+
+
+<PropertyGroup>
+  <PackageIcon>icon.png</PackageIcon>
+</PropertyGroup>
+
+<ItemGroup>
+  <None Include="icon.png" Pack="true" PackagePath="\"/>
+</ItemGroup>
 
 </Project>
