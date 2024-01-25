@@ -1,5 +1,5 @@
 [![License Shield](https://img.shields.io/badge/license-Apache--2.0-orange)](https://github.com/GlitchedPolygons/Cryptography.Asymmetric/blob/master/LICENSE)
-[![NuGet](https://img.shields.io/nuget/v/GlitchedPolygons.Services.ReCaptchaValidator.svg)](https://www.nuget.org/packages/GlitchedPolygons.Services.ReCaptchaValidator) [![CircleCI Status Badge](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/ReCaptchaValidator) [![Build Status](https://travis-ci.org/GlitchedPolygons/ReCaptchaValidator.svg?branch=master)](https://travis-ci.org/GlitchedPolygons/ReCaptchaValidator)
+[![NuGet](https://img.shields.io/nuget/v/GlitchedPolygons.Services.ReCaptchaValidator.svg)](https://www.nuget.org/packages/GlitchedPolygons.Services.ReCaptchaValidator)
 
 # ReCaptcha Validator Service
 
