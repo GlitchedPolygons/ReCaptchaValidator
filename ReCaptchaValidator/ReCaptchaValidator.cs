@@ -90,12 +90,21 @@ namespace GlitchedPolygons.Services.ReCaptchaValidator
             IPAddress remoteIP = ip.MapToIPv4();
             string payload = $"&secret={reCaptchaSecretKey}&remoteip={remoteIP}&response={code}";
 
-            using (var httpClient = new HttpClient { Timeout = TimeSpan.FromSeconds(timeout), BaseAddress = BASE_URI })
-            using (var httpRequest = new HttpRequestMessage { Method = HttpMethod.Post, RequestUri = VALIDATION_ENDPOINT_URI, Content = new StringContent(payload, Encoding.UTF8, MEDIA_TYPE) })
+            using (var httpClient = new HttpClient())
             {
-                HttpResponseMessage response = await httpClient.SendAsync(httpRequest);
-                string json = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<ReCaptchaResponse>(json);
+                httpClient.Timeout = TimeSpan.FromSeconds(timeout);
+                httpClient.BaseAddress = BASE_URI;
+                
+                using (var httpRequest = new HttpRequestMessage())
+                {
+                    httpRequest.Method = HttpMethod.Post;
+                    httpRequest.RequestUri = VALIDATION_ENDPOINT_URI;
+                    httpRequest.Content = new StringContent(payload, Encoding.UTF8, MEDIA_TYPE);
+                    
+                    HttpResponseMessage response = await httpClient.SendAsync(httpRequest);
+                    string json = await response.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<ReCaptchaResponse>(json);
+                }
             }
         }
     }
